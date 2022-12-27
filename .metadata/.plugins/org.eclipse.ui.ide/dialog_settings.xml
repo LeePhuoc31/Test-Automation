@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Study\CT243\DBCL_KTPM_Nhom2\Edureka_Selenium_Tutorials"/>
+			<item value="D:\Study\CT243\DBCL_KTPM_Nhom2\Assertion_in_TestNG"/>
+			<item value="D:\Study\CT243\DBCL_KTPM_Nhom2\B1906552_LHTPhuoc"/>
+			<item value="D:\DBCL&amp;KTPM_Nhom2\Lesson2"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

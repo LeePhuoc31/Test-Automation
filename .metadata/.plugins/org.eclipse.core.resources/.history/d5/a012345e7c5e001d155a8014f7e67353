@@ -1,0 +1,39 @@
+package unit_tesing;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import thuvien.tinhtoan.PhepTinh;
+
+public class TestPhepToan {
+	@Test
+	public void TestCong() {
+		System.out.println(PhepTinh.Op('+', 5, 7));
+	}
+
+	@DataProvider(name = "testdata+")
+	public Object[][] TestDataFeed0() {
+		// New.ReadExcelFile config = new
+		//ReadExcelFile("C:\\Users\\Vardhan\\workspace\\Selenium\\LoginCreadentials.xlsx");
+		ReadExcelFile config = new ReadExcelFile(
+				"D:\\Bai tap them ve Data driven testing\\Baitap1\\Thu vien va Du lieu kiem thu\\TestData.xlsx");
+
+		int rows = config.getRowCount(0);
+
+		Object[][] dataCong = new Object[rows][3];
+
+		for (int i = 0; i < rows; i++) {
+			dataCong[i][0] = config.getData(0, i, 0);
+			dataCong[i][1] = config.getData(0, i, 1);
+			dataCong[i][2] = config.getData(0, i, 2);
+		}
+
+		return dataCong;
+	}
+
+	public static char[] Op(char c, int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

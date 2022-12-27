@@ -1,0 +1,83 @@
+package unit_tesing;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import thuvien.tinhtoan.PhepTinh;
+
+public class TestPhepToan {
+	@Test(dataProvider="testdata+")
+	public void TestCong(float x, float y, float expected) {
+		float actual = (PhepTinh.Op('+', x, y));
+		Assert.assertEquals(actual, expected, "Sai");
+		System.out.println("Dung");
+	}
+
+	@Test(dataProvider="testdata-")
+	public void TestTru(float x, float y, float expected) {
+		float actual = (PhepTinh.Op('-', x, y));
+		Assert.assertEquals(actual, expected, "Sai");
+		System.out.println("Dung");
+	}
+	
+	@Test(dataProvider="testdata*")
+	public void TestNhan(float x, float y, float expected) {
+		float actual = (PhepTinh.Op('*', x, y));
+		Assert.assertEquals(actual, expected, "Sai");
+		System.out.println("Dung");
+	}
+	@DataProvider(name = "testdata+")
+	public Object[][] TestDataFeed0() {
+		ReadExcelFile config = new ReadExcelFile(
+				"D:\\Bai tap them ve Data driven testing\\Baitap1\\Thu vien va Du lieu kiem thu\\TestData.xlsx");
+
+		int rows = config.getRowCount(0);
+
+		Object[][] data = new Object[rows][3];
+
+		for (int i = 0; i < rows; i++) {
+			data[i][0] = (float)config.getData(0, i, 0);
+			data[i][1] = (float)config.getData(0, i, 1);
+			data[i][2] = (float)config.getData(0, i, 2);
+		}
+
+		return data;
+	}
+
+	@DataProvider(name = "testdata-")
+	public Object[][] TestDataFeed1() {
+		ReadExcelFile config = new ReadExcelFile(
+				"D:\\Bai tap them ve Data driven testing\\Baitap1\\Thu vien va Du lieu kiem thu\\TestData.xlsx");
+
+		int rows = config.getRowCount(1);
+
+		Object[][] data = new Object[rows][3];
+
+		for (int i = 0; i < rows; i++) {
+			data[i][0] = (float)config.getData(1, i, 0);
+			data[i][1] = (float)config.getData(1, i, 1);
+			data[i][2] = (float)config.getData(1, i, 2);
+		}
+
+		return data;
+	}
+
+	@DataProvider(name = "testdata*")
+	public Object[][] TestDataFeed2() {
+		ReadExcelFile config = new ReadExcelFile(
+				"D:\\Bai tap them ve Data driven testing\\Baitap1\\Thu vien va Du lieu kiem thu\\TestData.xlsx");
+
+		int rows = config.getRowCount(2);
+
+		Object[][] data = new Object[rows][3];
+
+		for (int i = 0; i < rows; i++) {
+			data[i][0] = (float)config.getData(2, i, 0);
+			data[i][1] = (float)config.getData(2, i, 1);
+			data[i][2] = (float)config.getData(2, i, 2);
+		}
+
+		return data;
+	}
+}

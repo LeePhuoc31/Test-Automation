@@ -1,0 +1,21 @@
+package unit_tesing;
+
+import org.testng.annotations.Test;
+import thuvien.tinhtoan.*;
+
+public class TestPhepToan {
+	@Test
+	public void TestCong() {
+		System.out.println(PhepTinh.Op('+', 5, 7));
+	}
+
+	@Test
+	public void TestTru() {
+		System.out.println(PhepTinh.Op('-', 5, 7));
+	}
+
+	@Test
+	public void TestNhan() {
+		System.out.println(PhepTinh.Op('*', 5, 7));
+	}
+}

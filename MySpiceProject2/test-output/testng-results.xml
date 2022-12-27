@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Bookings_Functional" duration-ms="31" started-at="2022-10-31T09:36:37Z" finished-at="2022-10-31T09:36:37Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="31" started-at="2022-10-31T09:36:37Z" finished-at="2022-10-31T09:36:37Z">
+      <class name="Bookings.BookHotel">
+        <test-method status="PASS" signature="BookHotel_CheckOut()[pri:0, instance:Bookings.BookHotel@26653222]" name="BookHotel_CheckOut" duration-ms="1" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookHotel_CheckOut -->
+        <test-method status="PASS" signature="BookHotel_Checkin()[pri:0, instance:Bookings.BookHotel@26653222]" name="BookHotel_Checkin" duration-ms="1" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookHotel_Checkin -->
+        <test-method status="PASS" signature="BookHotel_DestinationCity()[pri:0, instance:Bookings.BookHotel@26653222]" name="BookHotel_DestinationCity" duration-ms="0" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookHotel_DestinationCity -->
+      </class> <!-- Bookings.BookHotel -->
+      <class name="Bookings.BookFlight">
+        <test-method status="PASS" signature="BookFlight_OneWay_Testcase1()[pri:0, instance:Bookings.BookFlight@5e5792a0]" name="BookFlight_OneWay_Testcase1" duration-ms="1" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookFlight_OneWay_Testcase1 -->
+        <test-method status="PASS" signature="BookFlight_OneWay_Testcase2()[pri:0, instance:Bookings.BookFlight@5e5792a0]" name="BookFlight_OneWay_Testcase2" duration-ms="0" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookFlight_OneWay_Testcase2 -->
+        <test-method status="PASS" signature="BookFlight_RoundTrip_Testcase1()[pri:0, instance:Bookings.BookFlight@5e5792a0]" name="BookFlight_RoundTrip_Testcase1" duration-ms="0" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookFlight_RoundTrip_Testcase1 -->
+        <test-method status="PASS" signature="BookFlight_RoundTrip_Testcase2()[pri:0, instance:Bookings.BookFlight@5e5792a0]" name="BookFlight_RoundTrip_Testcase2" duration-ms="1" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookFlight_RoundTrip_Testcase2 -->
+      </class> <!-- Bookings.BookFlight -->
+      <class name="Bookings.BookHolidayPackage">
+        <test-method status="PASS" signature="BookHolidayPackage_departure()[pri:0, instance:Bookings.BookHolidayPackage@61832929]" name="BookHolidayPackage_departure" duration-ms="6" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookHolidayPackage_departure -->
+        <test-method status="PASS" signature="BookHolidayPackage_destination()[pri:0, instance:Bookings.BookHolidayPackage@61832929]" name="BookHolidayPackage_destination" duration-ms="1" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookHolidayPackage_destination -->
+        <test-method status="PASS" signature="BookHolidayPackage_return()[pri:0, instance:Bookings.BookHolidayPackage@61832929]" name="BookHolidayPackage_return" duration-ms="0" started-at="2022-10-31T16:36:37Z" finished-at="2022-10-31T16:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookHolidayPackage_return -->
+      </class> <!-- Bookings.BookHolidayPackage -->
+    </test> <!-- Test -->
+  </suite> <!-- Bookings_Functional -->
+</testng-results>

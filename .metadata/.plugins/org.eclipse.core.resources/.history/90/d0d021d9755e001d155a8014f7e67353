@@ -1,0 +1,30 @@
+package unit_tesing;
+
+import org.testng.annotations.DataProvider;
+
+public class PhepTinh {
+	@DataProvider(name = "testdata")
+	public Object[][] TestDataFeed() {
+		// New.ReadExcelFile config = new
+		// New.ReadExcelFile("C:\\Users\\Vardhan\\workspace\\Selenium\\LoginCreadentials.xlsx");
+		unit_tesing.ReadExcelFile config = new unit_tesing.ReadExcelFile(
+				"D:\\Bai tap them ve Data driven testing\\Baitap1\\Thu vien va Du lieu kiem thu\\TestData.xlsx");
+
+		int rows = config.getRowCount(0);
+
+		Object[][] credentials = new Object[rows][3];
+
+		for (int i = 0; i < rows; i++) {
+			credentials[i][0] = config.getData(0, i, 0);
+			credentials[i][1] = config.getData(0, i, 1);
+			credentials[i][1] = config.getData(0, i, 2);
+		}
+
+		return credentials;
+	}
+
+	public static char[] Op(char c, int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

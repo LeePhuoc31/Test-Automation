@@ -1,0 +1,27 @@
+package AssertionDemo;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class AssertionScripts {
+	@Test
+	public void test1() {
+		System.out.println("Test 1 started");
+		Assert.assertEquals(12, 13);
+		System.out.println("Test 1 completed");
+	}
+
+	@Test
+	public void test12() {
+		System.out.println("Test 12 started");
+		Assert.assertEquals(12, 13, "Dropdown count does not match. Please check it with developer!");
+		System.out.println("Test 12 completed");
+	}
+	
+	@Test
+	public void test13() {
+		System.out.println("Test 13 started");
+		Assert.assertEquals("Hello", "Hello", "Words does not match! Please raise a bug!");
+		System.out.println("Test 13 completed");
+	}
+}

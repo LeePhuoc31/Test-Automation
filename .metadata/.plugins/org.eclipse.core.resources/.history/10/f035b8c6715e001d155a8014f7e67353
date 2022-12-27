@@ -1,0 +1,10 @@
+package unit_tesing;
+
+import org.testng.annotations.Test;
+
+public class TestPhepToan {
+	@Test
+	public void TestCong(){
+		
+	}
+}
